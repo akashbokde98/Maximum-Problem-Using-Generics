@@ -8,7 +8,7 @@ namespace TestMaximum
         {
             CompareValues compare = new CompareValues();
 
-            int maxNumber = compare.MaxIntegerNumber(30, 20, 10);
+            int maxNumber = compare.MaxIntegerNumber(10, 50, 30);
             Console.WriteLine(maxNumber);
         }
     }
