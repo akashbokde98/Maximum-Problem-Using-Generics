@@ -8,7 +8,7 @@ namespace TestMaximum
         {
             CompareValues compare = new CompareValues();
 
-            string maxValue = compare.MaxStringValue("Peach", "Apple", "Banana");
+            string maxValue = compare.MaxStringValue("Apple", "Peach", "Banana");
             Console.WriteLine(maxValue);
         }
     }

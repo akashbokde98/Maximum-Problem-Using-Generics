@@ -20,7 +20,7 @@ namespace TestMaximum
             {
                 return thirdValue;
             }
-            return firstValue;
+            return secondValue;
         }
     }
 }
