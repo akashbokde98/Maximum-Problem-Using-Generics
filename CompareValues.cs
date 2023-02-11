@@ -6,7 +6,7 @@ namespace TestMaximum
 {
     internal class CompareValues
     {
-        public void MaxIntegerNumber(int firstValue, int secondValue, int thirdValue)
+        public int MaxIntegerNumber(int firstValue, int secondValue, int thirdValue)
         {
             if (firstValue.CompareTo(secondValue) > 0 && firstValue.CompareTo(thirdValue) > 0) 
             {
@@ -20,7 +20,7 @@ namespace TestMaximum
             {
                 return thirdValue;
             }
-            //return firstValue;
+            return firstValue;
         }
     }
 }
