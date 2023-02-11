@@ -6,7 +6,10 @@ namespace TestMaximum
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Find Maximum Using Generics");
+            CompareValues compare = new CompareValues();
+
+            string maxValue = compare.MaxStringValue("Peach", "Apple", "Banana");
+            Console.WriteLine(maxValue);
         }
     }
 }
