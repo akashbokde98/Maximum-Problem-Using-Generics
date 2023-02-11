@@ -6,7 +6,10 @@ namespace TestMaximum
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Find Maximum Using Generics");
+            CompareValues compare = new CompareValues();
+
+            float maxNumber = compare.MaxFloatNumber(10.5f, 5.5f, 2.5f);
+            Console.WriteLine(maxNumber);
         }
     }
 }
