@@ -4,9 +4,19 @@ using System.Text;
 
 namespace TestMaximum
 {
-    internal class CompareValues
+    internal class CompareValues<T> where T : IComparable
     {
-        public T MaximumValue<T>(T firstValue, T secondValue, T thirdValue)where T:IComparable
+        public T firstValue;
+        public T secondValue;
+        public T thirdValue;
+        public CompareValues(T value1, T value2, T value3)
+        {
+            firstValue = value1;
+            secondValue = value2;
+            thirdValue = value3;
+        }
+
+        public T MaximumValue()
         {
             if (firstValue.CompareTo(secondValue) > 0 && firstValue.CompareTo(thirdValue) > 0)
             {
