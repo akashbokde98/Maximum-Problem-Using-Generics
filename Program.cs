@@ -12,17 +12,6 @@ namespace TestMaximum
             Console.WriteLine(max1.MaximumValue());
             Console.WriteLine(max2.MaximumValue());
             Console.WriteLine(max3.MaximumValue());
-            /*value.firstValue = 1;
-            value.secondValue = 2;
-            value.thirdValue = 3;  */
-            //CompareValues compare = new CompareValues();
-
-            /*int maxIntegerValue = value.MaximumValue<int>(30, 20, 10);
-            float maxFloatValue = value.MaximumValue<float>(30.33f, 20.22f, 10.55f);
-            string maxStringValue = value.MaximumValue<string>("Apple", "Peach", "Banana");
-            Console.WriteLine(maxIntegerValue);
-            Console.WriteLine(maxFloatValue);
-            Console.WriteLine(maxStringValue);*/
         }
     }
 }
