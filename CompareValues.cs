@@ -6,7 +6,7 @@ namespace TestMaximum
 {
     internal class CompareValues
     {
-        public T MaximumValue<T>(T firstValue, T secondValue, T thirdValue)where T : IComparable
+        public T MaximumValue<T>(T firstValue, T secondValue, T thirdValue)where T:IComparable
         {
             if (firstValue.CompareTo(secondValue) > 0 && firstValue.CompareTo(thirdValue) > 0)
             {
