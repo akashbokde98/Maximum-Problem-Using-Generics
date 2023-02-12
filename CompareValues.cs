@@ -6,31 +6,35 @@ namespace TestMaximum
 {
     internal class CompareValues<T> where T : IComparable
     {
-        public T firstValue;
-        public T secondValue;
-        public T thirdValue;
-        public CompareValues(T value1, T value2, T value3)
+        public T[] intArray;
+        public CompareValues(T[] arr)
         {
-            firstValue = value1;
-            secondValue = value2;
-            thirdValue = value3;
+            intArray = arr;
         }
 
         public T MaximumValue()
         {
-            if (firstValue.CompareTo(secondValue) > 0 && firstValue.CompareTo(thirdValue) > 0)
+            if (intArray[0].CompareTo(intArray[1]) > 0 && intArray[0].CompareTo(intArray[2]) > 0 && intArray[0].CompareTo(intArray[3]) > 0 && intArray[0].CompareTo(intArray[4]) > 0)
             {
-                return firstValue;
+                return intArray[0];
             }
-            if (secondValue.CompareTo(firstValue) > 0 && secondValue.CompareTo(thirdValue) > 0)
+            if (intArray[1].CompareTo(intArray[0]) > 0 && intArray[1].CompareTo(intArray[2]) > 0 && intArray[1].CompareTo(intArray[3]) > 0 && intArray[1].CompareTo(intArray[4]) > 0)
             {
-                return secondValue;
+                return intArray[1];
             }
-            if (thirdValue.CompareTo(firstValue) > 0 && thirdValue.CompareTo(secondValue) > 0)
+            if (intArray[2].CompareTo(intArray[0]) > 0 && intArray[2].CompareTo(intArray[1]) > 0 && intArray[2].CompareTo(intArray[3]) > 0 && intArray[2].CompareTo(intArray[4]) > 0)
             {
-                return thirdValue;
+                return intArray[2];
             }
-            return firstValue;
+            if (intArray[3].CompareTo(intArray[0]) > 0 && intArray[3].CompareTo(intArray[1]) > 0 && intArray[3].CompareTo(intArray[2]) > 0 && intArray[3].CompareTo(intArray[4]) > 0)
+            {
+                return intArray[3];
+            }
+            if (intArray[4].CompareTo(intArray[0]) > 0 && intArray[4].CompareTo(intArray[1]) > 0 && intArray[4].CompareTo(intArray[2]) > 0 && intArray[4].CompareTo(intArray[3]) > 0)
+            {
+                return intArray[4];
+            }
+            return intArray[0];
         }
     }
 }
