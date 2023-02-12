@@ -4,15 +4,15 @@ using System.Text;
 
 namespace TestMaximum
 {
-    internal class CompareValues<T> where T : IComparable
+    internal class TestMaximum<T> where T : IComparable
     {
         public T[] intArray;
-        public CompareValues(T[] arr)
+        public TestMaximum(T[] arr)
         {
             intArray = arr;
         }
 
-        public T MaximumValue()
+        public T PrintMax()
         {
             if (intArray[0].CompareTo(intArray[1]) > 0 && intArray[0].CompareTo(intArray[2]) > 0 && intArray[0].CompareTo(intArray[3]) > 0 && intArray[0].CompareTo(intArray[4]) > 0)
             {
